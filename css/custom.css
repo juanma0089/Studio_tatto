@@ -1,5 +1,22 @@
+
+@font-face {
+  font-family: fontTatto;
+  src: url(/fonts/TattooInk-D0gD.ttf);
+}
+
+.studioTittle{
+  font-family: fontTatto;
+  font-size: 6rem;
+  display: none;
+}
+
 .bannerArtistas{
     height:190px;
+}
+
+/* card */
+.card-img-top{
+ max-height: 450px;
 }
 
 /* parallax */
@@ -20,13 +37,6 @@ html {
   font-family: Montserrat, sans-serif;
   width: 100%;
   
-}
-
-.parallax-item h1{
-  font-size: 6rem;
-  text-transform: uppercase;
-  padding: 1rem;
-  border-radius: 1rem;
 }
 
 .parallax-item:first-child {
@@ -59,14 +69,50 @@ html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Parallax Effect for DIV 3 */
-  min-height: 600px;
+  min-height: 500px;
   
 }
 
-@media screen and (max-width: 768px) {
-  .parallax-item h1 {
-    font-size: 3rem;
+
+@media screen and (max-width: 820px) {
+
+  .studioTittle{
+
+    font-size: 4rem;
   }
+  
+  .parallax-item:first-child {
+    background: url("/img/studio.jpg");
+    background-size: 100vw 40vh;
+    background-repeat:initial;
+    width: 100%;
+    /* distancia entre un div y otro */
+    min-height:40vh;
+   
+  }
+
+  .parallax-item:nth-child(2) {
+    min-height:20vh;
+   }
+
+   .parallax-item:nth-child(4) {
+  background: #1565c0;
+  min-height: 100px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+  .studioTittle{
+
+    font-size: 2rem;
+  }
+  
+
+  .card-img-top{
+    height: 400px;
+   }
+ 
   .parallax-item:first-child {
     background: url("/img/studio.jpg");
     background-size: 100vw 30vh;

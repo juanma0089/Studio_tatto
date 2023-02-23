@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 
 $(window).resize(function() {
  
-    if($(window).width() < 400){
+    if($(window).width() <= 820){
         $("div.video1").hide()
     }
     else{
@@ -19,3 +19,22 @@ $(window).resize(function() {
     }
  
 });
+
+$(window).resize(function() {
+ 
+    if($(window).width() <= 820){
+        $("span").hide()
+    }
+    else{
+        $("span").show()
+    }
+ 
+});
+
+$(window).ready(function(){
+
+    $(window).on(function(){
+        $("h1.fadeInLoad").fadeIn(1000);
+    });
+  });
+
