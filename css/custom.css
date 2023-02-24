@@ -7,11 +7,90 @@ body {
   overflow-x: hidden;
   background-color: black;
 }
-
+/* tamaño t´titulo */
 .studioTittle {
   font-family: fontTatto;
   font-size: 6rem;
 }
+/* mostrar título al cargar */
+.noMostrar {
+  animation: fadeIn 3.5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mostrar {
+  animation: fadeIn 2.5s;
+}
+/* fin mostrar título */
+
+/* animación de fotos */
+@keyframes anim-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anim-fade-in {
+  animation-duration: 0.8s; /* la animacion dura X segundos */
+  animation-fill-mode: both; /* aplica estilos de la animacion antes y despues de reproducirla */
+}
+
+.anim-fade-in {
+  animation-name: anim-fade-in;
+}
+
+.anim-pause-2 {
+  animation-delay: 0.5s;
+}
+.anim-pause-3 {
+  animation-delay: 1s;
+}
+.anim-pause-4 {
+  animation-delay: 1.5s;
+}
+.anim-pause-5 {
+  animation-delay: 2s;
+}
+.anim-pause-6 {
+  animation-delay: 2.5s;
+}
+.anim-pause-7 {
+  animation-delay: 3s;
+}
+.anim-pause-8 {
+  animation-delay: 3.5s;
+}
+.anim-pause-9 {
+  animation-delay: 4s;
+}
+.anim-pause-10 {
+  animation-delay: 4.5s;
+}
+.anim-pause-11 {
+  animation-delay: 5s;
+}
+.anim-pause-12 {
+  animation-delay: 5.5s;
+}
+.anim-pause-13 {
+  animation-delay: 6s;
+}
+/* todas las animaciones pausadas */
+.paused * {
+  animation-play-state: paused;
+  opacity: 0%;
+}
+/* fin animación */
 
 .bannerArtistas {
   height: 190px;
@@ -65,25 +144,15 @@ html {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Parallax Effect for DIV 3 */
-  min-height: 500px;
+  min-height: 300px;
 }
 
-.grey-scale{-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+/* fin parallax */
 
-/* img.blanconegro {
-  filter: grayscale(100%);
+.grey-scale {
   -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  }
-  img.blanconegro:hover {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    } */
+  filter: grayscale(100%);
+}
 
 @media screen and (max-width: 820px) {
   .studioTittle {

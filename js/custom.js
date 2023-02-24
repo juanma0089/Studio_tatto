@@ -33,6 +33,7 @@ $(window).ready(function () {
   });
 });
 
+// ?javascript
 function show_grey(obj) {
   $(obj).removeClass("grey-scale");
 }
@@ -40,6 +41,39 @@ function show_original(obj) {
   $(obj).addClass("grey-scale");
 }
 
+
+function moverTexto(){
+
+  let idTexto = document.getElementById('presentacion');
+
+  if(idTexto.classList.contains('noMostrar')){
+
+    idTexto.classList.remove('noMostrar');
+    idTexto.classList.add('mostrar');
+
+  }
+ 
+}
+
+
+function isVisible(elm) {
+  let rect = elm.getBoundingClientRect();
+  let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight)/1.3;
+  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
+// cuando se carga la página
+window.addEventListener('DOMContentLoaded', (ev0) => {
+// asignamos un evento scroll
+  window.addEventListener('scroll', (ev1) => {
+// y a todos los elementos con la clase paused
+    document.querySelectorAll(".paused").forEach(elm => {
+      if (isVisible(elm)){ // que sean visibles
+        elm.classList.remove("paused"); // les quitamos la clase paused
+      }
+    })
+  });
+})
 // $(document).ready(function(){
 //     $("img").mouseover(function(){
 //       $("img").removeClass("grey-scale");

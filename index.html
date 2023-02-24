@@ -18,8 +18,15 @@
 </head>
 
 <body>
+  <div class=" sticky-bottom m-2 position-fixed  mb-5 ">
+    <a href="#up">
+      <button type="button" class="btn p-0 px-3 pt-3 btn-warning">
+       <p>UP</p> 
+    </button>
+    </a>
+  </div>
   <div class="container-fluid bg-black p-0">
-    <header>
+    <header id="up">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-0">
         <!-- Container wrapper -->
@@ -72,7 +79,9 @@
     <section>
       <!-- Cabecera -->
       <div id="parallax" class="parallax-item text-white text-center">
-        <h1 class="studioTittle fadeInLoad"><span>~</span> ILER TATTOO STUDIO <span>~</span></h1>
+        <div id="presentacion" class="noMostrar ">
+          <h1 class="studioTittle fadeInLoad"><span>~</span> ILER TATTOO STUDIO <span>~</span></h1>
+        </div>
       </div>
 
       <!-- presenta artista -->
@@ -80,7 +89,7 @@
         <h2 class="">Nuestros artistas</h2>
       </div>
 
-      <!-- video -->z
+      <!-- video -->
       <div class=" video1">
         <video autoplay loop muted class="video1 w-100"
           src="https://video.wixstatic.com/video/fc5830_db61490e81764f44af3e59bd2ac4ed3a/1080p/mp4/file.mp4"
@@ -114,7 +123,7 @@
                   estilo blackwork explora el folklore andaluz y los motivos
                   del tatuaje clásico consiguiendo unos trabajos de gran
                   impacto visual, fuertes contrastes y un estilo muy personal y marcado por 
-                  sus raices .</p>
+                  sus raices y vivencias.</p>
               </div>
             </div>
           </div>
@@ -153,20 +162,20 @@
     </section>
   </div>
 </body>
-<footer class="text-center text-lg-start bg-dark">
+<footer class="text-center text-lg-start text bg-dark">
   <div class="container d-flex justify-content-center py-5 ">
     <a href="https://www.instagram.com/juanma0089/" target="_blank">
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 iconoFooter">
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-floating mx-2 iconoFooter">
         <i class="bi bi-instagram"></i>
       </button>
     </a>
     <a href="https://www.linkedin.com/in/juan-manuel-romalde-mar%C3%ADn-83a6aa17a/" target="_blank">
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 iconoFooter">
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-floating mx-2 iconoFooter">
         <i class="bi bi-linkedin"></i>
       </button>
     </a>
     <a href="https://github.com/juanma0089" target="_blank">
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 iconoFooter">
+      <button type="button" class="btn btn-outline-secondary btn-lg btn-floating mx-2 iconoFooter">
         <i class="bi bi-github"></i>
       </button>
     </a>
