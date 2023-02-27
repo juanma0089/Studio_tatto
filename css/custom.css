@@ -121,7 +121,7 @@ html {
 }
 
 .parallax-item:first-child {
-  background: url("/img/studio.jpg");
+  background: url("./img/studio.jpg");
   background-size: cover;
   background-repeat: initial;
   max-height: fit-content;
@@ -140,7 +140,7 @@ html {
 }
 
 .parallax-item:nth-child(5) {
-  background: url("/img/imagenFinal.jpg");
+  background: url("./img/imagenFinal.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Parallax Effect for DIV 3 */
@@ -190,7 +190,7 @@ html {
   }
 
   .parallax-item:first-child {
-    background: url("/img/studio.jpg");
+    background: url("./img/studio.jpg");
     background-size: 100vw 30vh;
     background-repeat: initial;
     width: 100%;
