@@ -18,7 +18,8 @@ $(window).resize(function () {
     $("div.video1").show();
   }
 });
-$(document).ready(function () {
+
+jQuery(function () {
   if ($(window).width() <= 820) {
     $("div.video1").hide();
   } else {
@@ -26,7 +27,7 @@ $(document).ready(function () {
   }
 });
 
-$(window).resize(function () {
+$(window).on('resize', function () {
   if ($(window).width() <= 820) {
     $("span").hide();
   } else {
