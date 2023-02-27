@@ -11,7 +11,7 @@ window.addEventListener("scroll", function () {
 
 //? jquery
 
-$(window).resize(function () {
+$(window).on( 'resize',function () {
   if ($(window).width() <= 820) {
     $("div.video1").hide();
   } else {
