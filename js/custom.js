@@ -18,6 +18,13 @@ $(window).resize(function () {
     $("div.video1").show();
   }
 });
+$(document).ready(function () {
+  if ($(window).width() <= 820) {
+    $("div.video1").hide();
+  } else {
+    $("div.video1").show();
+  }
+});
 
 $(window).resize(function () {
   if ($(window).width() <= 820) {
